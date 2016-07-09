@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ram Lmn" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Analyser Demo</title>
+    <meta name="description" content=">A simple library which uses the browsers native HTML5 Web Audio API to create visual effects">
+
+    <meta property="og:title" content="Audio Analyzer demo">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ramlmn.github.io/audio-analyzer">
+    <meta property="og:image" content="https://ramlmn.github.io/img/logo_256.png">
+    <meta property="og:description" content="A simple library which uses the browsers native HTML5 Web Audio API to create visual effects">
+    <meta name="twitter:title" content="Audio Analyzer dem">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://ramlmn.github.io/audio-analyzer">
+    <meta name="twitter:image" content="https://ramlmn.github.io/img/logo_256.png">
+    <meta name="twitter:description" content="A simple library which uses the browsers native HTML5 Web Audio API to create visual effects">
+    <meta name="twitter:creator" content="@ramlmn">
+
+    <link rel="stylesheet" href="demo.css">
+  </head>
+
+  <body class="container">
+
+    <div class="header">
+      <h1>Audio Analyser &#183; <a href="https://github.com/ramlmn/">Github</a></h1>
+      <p>
+        <i>A simple library which uses the browsers native HTML5 Web Audio API to create visual effects.</i>
+      </p>
+    </div>
+
+    <div class="controls">
+      <div class="control">
+        <label>Source:</label>
+        <select id="sourceControl">
+          <option value="./audio/Laszlo_Supernova.mp3" selected>Laszlo - Supernova</option>
+          <option value="./audio/TimeZone_WorldDestruction.mp3">Time Zone - World Destruction</option>
+          <option value="./audio/Bach_Cantara_140_Chorus.ogg">Bach Cantata 140 Chorus</option>
+          <option value="./audio/TPRMX_Beethoven_Symphony_9.mp3">Bethoven 9th symphony remix</option>
+        </select>
+      </div>
+      <div class="control">
+        <label>Color type:</label>
+        <select id="colorControl">
+          <option value="grad">Gradient</option>
+          <option value="color">Plain Color</option>
+        </select>
+      </div>
+      <div class="control">
+        <label>Visual:</label>
+        <select id="visualControl">
+          <option value="frequencybars" selected>Vertical bars</option>
+          <option value="sinewave">Sine wave</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="audio__box">
+      <audio id="audio1" src="./audio/Laszlo_Supernova.mp3" controls></audio>
+    </div>
+
+    <ul>
+      <li>Laszlo - Supernova [<a href="https://soundcloud.com/laszlomusic/laszlo-supernova">Soundcloud</a>]</li>
+      <li>Johann Sebastian Bach [<a href="http://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a>], <a href="https://commons.wikimedia.org/wiki/File%3ABach_-_cantata_140._1._chorus.ogg">via Wikimedia Commons</a></li>
+      <li>TPRMX - Bethoven 9th symphony remix [<a href="https://www.youtube.com/watch?v=ZcdOM-MyZR4">YouTube</a>]</li>
+      <li>Time Zone - World Destruction [<a href="https://open.spotify.com/track/3k5RlAqZfGeflQFgkg3NwJ">Spotify</a>]</li>
+    </ul>
+
+    <p>
+      <b>Note: </b> All the music files are used for demonstration purpose only, not with any other intention!
+    </p>
+
+    <script src="audioAnalyzer.js"></script>
+    <script src="demo.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box
+}
+html, body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #555;
+  font-size: 16px;
+}
+
+a {
+  color: #1976D2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  padding: 8px;
+}
+
+.header h1 {
+  color: #333;
+  margin: 10px 0;
+  padding: 0 0 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.header p {
+  margin: 15px 0;
+  padding: 15px 0;
+  border-bottom: 1px solid #dedede;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 8px;
+  margin: auto;
+}
+
+.audio__box {
+  width: 100%;
+  padding: 5px;
+  margin: 25px auto;
+  background-color: #000;
+}
+
+.audio__box audio {
+  width: 100%;
+}
+
+.audio__box canvas {
+  width: 100%;
+  height: calc(100% / 4);
+  background-color: #002D3C;
+}
+
+.control {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.control label {
+  width: 30%;
+  padding: 4px 6px;
+}
+
+.control select {
+  flex: 1;
+  height: 26px;
+}
